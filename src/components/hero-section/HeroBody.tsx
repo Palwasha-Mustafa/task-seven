@@ -2,7 +2,7 @@
 const HeroBody = () => {
     return (
         <>
-            <div className="grid grid-cols-2 pl-10 container mx-auto">
+            <div className="grid grid-cols-2 pl-10 max-w-[1440px] mx-auto">
                 <div className="pt-32 space-y-9">
                     <div>
                         <h1 className="text-[78px] text-white font-normal leading[127%]">Creating Beyond

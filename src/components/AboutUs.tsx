@@ -63,7 +63,7 @@ const testimonials: Testimonial[] = [
       {/* Centered Heading with Blue Bar */}
       <div className="flex items-center justify-center gap-6 absolute top-[5px] left-1/2 transform -translate-x-1/2">
         {/* Blue Gradient Bar */}
-        <div className="w-[12px] h-[62px] bg-gradient-to-b from-[#1E61B8] to-[#7E939A] rounded-full"></div>
+        <div className="w-3 h-[62px] bg-linear-to-b from-[#1E61B8] to-[#7E939A] rounded-full"></div>
         
         {/* Heading */}
         <h2 className="font-gilroy-bold text-[43px] leading-[120%] text-white text-center">
@@ -92,7 +92,7 @@ const testimonials: Testimonial[] = [
             {testimonials.map((testimonial) => (
               <div 
                 key={testimonial.id}
-                className="w-full flex-shrink-0 flex justify-center"
+                className="w-full shrink-0 flex justify-center"
               >
                 {/* Testimonial Card - Round Square Container */}
                 <div className="w-[900px] min-h-[450px] bg-white rounded-2xl relative p-12 shadow-lg">
@@ -107,7 +107,7 @@ const testimonials: Testimonial[] = [
       
 {/* Testimonial Text - adjustment */}
 <div className="w-full min-h-[239px] mt-8 pl-4 pr-4">
-  <p className="font-gilroy-regular text-[30px] leading-[150%] text-black whitespace-pre-line break-words">
+  <p className="font-gilroy-regular text-[30px] leading-[150%] text-black whitespace-pre-line wrap-break-word">
     {testimonial.text}
   </p>
   
@@ -127,7 +127,7 @@ const testimonials: Testimonial[] = [
   </div>
   
   {/* Author Position */}
-  <div className="w-[210px] h-[24px] mt-2">
+  <div className="w-[210px] h-6 mt-2">
     <p className="font-gilroy-regular text-[16px] leading-[150%] text-black text-center">
       {testimonial.position}
     </p>

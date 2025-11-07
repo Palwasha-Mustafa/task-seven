@@ -15,7 +15,7 @@ const WhyUs: React.FC = () => {
         <>
 
             <div className="pt-12 pb-20 bg-[#15141d]">
-                <div className="container mx-auto px-10">
+                <div className="container mx-auto px-20">
                     <h2 className="text-[42px] font-semibold text-[#FFFFFF] leading-12 pb-[21px] flex items-center gap-[23px]">
                         <span
                             className="inline-block w-3 h-[62px]"

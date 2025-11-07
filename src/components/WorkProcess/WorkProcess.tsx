@@ -171,7 +171,7 @@
 
 // export default WorkProcess;
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Picture5 from "../../images/Picture5.png";
 import Picture6 from "../../images/Picture6.png";
@@ -202,11 +202,11 @@ const WorkProcess = () => {
     //       At Devzz Tech, our streamlined work process ensures efficiency, quality, and innovation at every stage of your project. Here’s how we make it happen:
     //     </p>
     //   </div>
-     <div className="bg-[#0B0C10] text-white py-16 px-6 flex flex-col items-center relative">
+    <div className="bg-[#0B0C10] text-white py-16 px-6 flex flex-col items-center relative">
       {/* Section Heading */}
-       <div className="max-w-3xl text-center mb-12 -ml-100">
-         <div className="flex items-center justify-center gap-3 mb-3 -ml-10">
-           <img
+      <div className="max-w-3xl text-center mb-12 -ml-100">
+        <div className="flex items-center justify-center gap-3 mb-3 -ml-10">
+          <img
             src={GetStartedLine}
             alt="line"
             className="w-[12px] h-[62px] object-contain -ml-88"
@@ -238,9 +238,8 @@ const WorkProcess = () => {
               onMouseEnter={() => setActiveStep(index)}
               onMouseLeave={() => setActiveStep(null)}
               onClick={() => setSelectedStep(step.num)}
-              className={`relative w-20 h-20 flex items-center justify-center rounded-full cursor-pointer transition-transform duration-300 p-[3px] ${
-                activeStep === index ? "scale-110 shadow-[0_0_25px_rgba(173,216,230,0.8)]" : ""
-              }`}
+              className={`relative w-20 h-20 flex items-center justify-center rounded-full cursor-pointer transition-transform duration-300 p-[3px] ${activeStep === index ? "scale-110 shadow-[0_0_25px_rgba(173,216,230,0.8)]" : ""
+                }`}
             >
               <div className="absolute inset-[3px] rounded-full bg-[#0B0C10] flex items-center justify-center z-10">
                 0{step.num}

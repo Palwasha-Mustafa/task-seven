@@ -405,7 +405,7 @@ const GetStartedForm: React.FC = () => {
 
             <button
               type="submit"
-              className="bg-[#1E61B8] hover:bg-[#15518f] text-white py-3 px-6 rounded-[35px] font-medium w-[143px] h-[48px] transition-colors"
+              className="bg-[#1E61B8] hover:bg-[#15518f] text-white py-3 px-6 rounded-[35px] font-medium w-[143px] h-12 transition-colors"
             >
               Submit
             </button>

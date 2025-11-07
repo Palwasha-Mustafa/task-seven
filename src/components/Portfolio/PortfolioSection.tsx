@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import deskIt from "../../images/Picture1.png";
 import behamas from "../../images/Picture2.png";
@@ -7,9 +7,24 @@ import moviestream from "../../images/Picture4.png";
 import GetStartedLine from "../../images/colorline.png";// your vertical line image
 // import GetStartedLine from "../../images/get-started-line.png"; // vertical line beside heading
 
+type TabKey =
+  | "Web Development"
+  | "App Development"
+  | "UI/UX Design"
+  | "Graphic Design"
+  | "SaaS"
+  | "Artificial Intelligence";
+
+type Project = {
+  title: string;
+  desc: string;
+  img: string;
+  extraClass?: string;
+};
+
 const PortfolioSection = () => {
-  const [activeTab, setActiveTab] = useState("Web Development");
-  const [selectedProject, setSelectedProject] = useState(null); // modal state
+  const [activeTab, setActiveTab] = useState<TabKey>("Web Development");
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null); // modal state
 
   const portfolioData = {
     "Web Development": [
@@ -74,12 +89,11 @@ const PortfolioSection = () => {
           {tabs.map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-full font-medium transition ${
-                activeTab === tab
-                  ? "bg-blue-600 text-white"
-                  : "text-gray-300 hover:text-white"
-              }`}
+              onClick={() => setActiveTab(tab as TabKey)}
+              className={`px-4 py-2 rounded-full font-medium transition ${activeTab === tab
+                ? "bg-blue-600 text-white"
+                : "text-gray-300 hover:text-white"
+                }`}
             >
               {tab}
             </button>
