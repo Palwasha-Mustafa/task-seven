@@ -16,12 +16,13 @@ const LandingPage = () => {
         <Nav />
         <HeroSection />
         {/* About Section */}
-        <div className="py-16 bg-gray-900">
+        <div className="py-16 bg-[#1E1C26];
+">
           <About />
         </div>
 
         {/* Services Section */}
-        <div className="py-16 bg-gray-900">
+        <div className="py-16 bg-[#1E1C26]">
           <Services />
         </div>
         <WhyUs />
@@ -31,7 +32,7 @@ const LandingPage = () => {
         </div>
 
         {/* AboutUs Section (With Testimonials) */}
-        <div className="py-16 bg-gray-900">
+        <div className="py-16 bg-[#1E1C26]">
           <AboutUs />
         </div>
         
